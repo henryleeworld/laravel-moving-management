@@ -5,7 +5,7 @@
         <div class="col-lg-12">
             <div class="card">
                 <div class="card-header">
-                    Dashboard
+                    {{ trans('global.dashboard') }}
                 </div>
 
                 <div class="card-body">
@@ -15,7 +15,7 @@
                         </div>
                     @endif
 
-                    You are logged in!
+                    {{ trans('global.youAreLoggedIn') }}
                 </div>
             </div>
         </div>
