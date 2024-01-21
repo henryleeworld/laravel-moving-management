@@ -9,8 +9,7 @@ return new class extends Migration
     public function up()
     {
         Schema::table('movings', function (Blueprint $table) {
-            $table->unsignedInteger('user_id');
-            $table->foreign('user_id', 'user_fk_2312361')->references('id')->on('users');
+            $table->foreignId('user_id')->constrained();
         });
     }
 };

@@ -1,4 +1,4 @@
-# Laravel 9 搬家管理
+# Laravel 10 搬家管理
 
 學生畢業準備搬離生活一段時間的城市，上班族換了新工作也準備換新的落角處，家庭有新成員的加入因而有換房的計畫，不論是什麼身分的你，還在為了怎麼搬家而煩惱嗎？
 
@@ -20,9 +20,13 @@ $ php artisan key:generate
 ```sh
 $ php artisan migrate --seed
 ```
-- 執行安裝 Laravel Mix 引用的依賴項目，並執行所有 Mix 任務。
+- 執行安裝 Vite 和 Laravel 擴充套件引用的依賴項目。
 ```sh
-$ npm install && npm run dev
+$ npm install
+```
+- 執行正式環境版本化資源管道並編譯。
+```sh
+$ npm run build
 ```
 - 在瀏覽器中輸入已定義的路由 URL 來訪問，例如：http://127.0.0.1:8000。
 - 你可以經由 `/login` 來進行登入，預設的電子郵件和密碼分別為 __admin@admin.com__ 和 __password__ 。
@@ -30,5 +34,5 @@ $ npm install && npm run dev
 ----
 
 ## 畫面截圖
-![](https://i.imgur.com/jfEwG3d.png)
+![](https://i.imgur.com/laPVotV.png)
 > 搬家公司只負責將物品運送到目的地，後續的事情需要自己搬運整理
